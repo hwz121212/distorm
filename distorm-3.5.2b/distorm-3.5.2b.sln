@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{28AD82BE-F7ED-48F5-B835-CFED522664AC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libdistorm", "thirdparty\distorm-3.5.2b\libdistorm.vcxproj", "{15051CE1-AB10-4239-973D-01B84F2AD0A9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "distorm", "thirdparty\distorm-3.5.2b\distorm.vcxproj", "{7999230E-39BA-4D69-8727-84EED54E5D52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_demo", "1_demo", "{BA353F11-4BB5-41C0-ABB1-2950F9FA61F0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "disasm", "demo\examples\win32\disasm.vcxproj", "{3CFD8D3C-5D69-47BF-9E96-BCD6AC473C8C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15051CE1-AB10-4239-973D-01B84F2AD0A9} = {15051CE1-AB10-4239-973D-01B84F2AD0A9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tests", "demo\examples\tests\tests.vcxproj", "{1877AF03-7A23-4D23-978F-2A8EA79CD370}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15051CE1-AB10-4239-973D-01B84F2AD0A9} = {15051CE1-AB10-4239-973D-01B84F2AD0A9}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15051CE1-AB10-4239-973D-01B84F2AD0A9}.Debug|x64.ActiveCfg = Debug|x64
+		{15051CE1-AB10-4239-973D-01B84F2AD0A9}.Debug|x64.Build.0 = Debug|x64
+		{15051CE1-AB10-4239-973D-01B84F2AD0A9}.Release|x64.ActiveCfg = Release|x64
+		{15051CE1-AB10-4239-973D-01B84F2AD0A9}.Release|x64.Build.0 = Release|x64
+		{7999230E-39BA-4D69-8727-84EED54E5D52}.Debug|x64.ActiveCfg = Debug|x64
+		{7999230E-39BA-4D69-8727-84EED54E5D52}.Debug|x64.Build.0 = Debug|x64
+		{7999230E-39BA-4D69-8727-84EED54E5D52}.Release|x64.ActiveCfg = Release|x64
+		{7999230E-39BA-4D69-8727-84EED54E5D52}.Release|x64.Build.0 = Release|x64
+		{3CFD8D3C-5D69-47BF-9E96-BCD6AC473C8C}.Debug|x64.ActiveCfg = Debug|x64
+		{3CFD8D3C-5D69-47BF-9E96-BCD6AC473C8C}.Debug|x64.Build.0 = Debug|x64
+		{3CFD8D3C-5D69-47BF-9E96-BCD6AC473C8C}.Release|x64.ActiveCfg = Release|x64
+		{3CFD8D3C-5D69-47BF-9E96-BCD6AC473C8C}.Release|x64.Build.0 = Release|x64
+		{1877AF03-7A23-4D23-978F-2A8EA79CD370}.Debug|x64.ActiveCfg = Debug|x64
+		{1877AF03-7A23-4D23-978F-2A8EA79CD370}.Debug|x64.Build.0 = Debug|x64
+		{1877AF03-7A23-4D23-978F-2A8EA79CD370}.Release|x64.ActiveCfg = Release|x64
+		{1877AF03-7A23-4D23-978F-2A8EA79CD370}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15051CE1-AB10-4239-973D-01B84F2AD0A9} = {28AD82BE-F7ED-48F5-B835-CFED522664AC}
+		{7999230E-39BA-4D69-8727-84EED54E5D52} = {28AD82BE-F7ED-48F5-B835-CFED522664AC}
+		{3CFD8D3C-5D69-47BF-9E96-BCD6AC473C8C} = {BA353F11-4BB5-41C0-ABB1-2950F9FA61F0}
+		{1877AF03-7A23-4D23-978F-2A8EA79CD370} = {BA353F11-4BB5-41C0-ABB1-2950F9FA61F0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
+	EndGlobalSection
+EndGlobal
